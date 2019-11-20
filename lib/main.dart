@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   new Card(
                     child: new Container(
-                      child: new Text("Hello"),
+                      child: new Text(data[index]['name']+" has "+data[index]['eye_color']+" eyes."),
                       padding: const EdgeInsets.all(20.0),
                     ),
                   )
