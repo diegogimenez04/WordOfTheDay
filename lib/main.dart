@@ -12,10 +12,6 @@ class WordOfTheDay extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Word Of The Day',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: MainScreen(title: 'Word of the Day'),
     );
   }
