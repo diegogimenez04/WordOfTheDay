@@ -2,23 +2,26 @@ import 'dart:convert';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'app_screens/home.dart';
 
 
-void main() => runApp(MyApp());
+void main() => runApp(WordOfTheDay());
 
-class MyApp extends StatelessWidget {
+class WordOfTheDay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Word Of The Day',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MainScreen(title: 'Word of the Day'),
     );
   }
 }
 
+/*
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
   final String title;
@@ -83,4 +86,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}
+*/
